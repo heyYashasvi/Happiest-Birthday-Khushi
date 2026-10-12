@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Khushi 🤍</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;1,300&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#e8d3a2;--ink:#05050a;--ivory:#fbf4e6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;background:var(--ink)}
+body{background:var(--ink);color:#f2ede2;font-family:'Cormorant Garamond',Georgia,serif;font-weight:300;overflow-x:hidden}
+body.lock{overflow:hidden;height:100%}
+section{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:12svh 7vw;position:relative;overflow:hidden}
+p,h1,h2,h3{line-height:1.45}
+.bg{position:absolute;inset:0;pointer-events:none;background:
+radial-gradient(1.5px 1.5px at 12% 20%,#fff8,transparent),radial-gradient(1px 1px at 78% 30%,#fff9,transparent),radial-gradient(1.5px 1.5px at 40% 75%,#fff7,transparent),radial-gradient(1px 1px at 90% 80%,#fff8,transparent),radial-gradient(1px 1px at 25% 55%,#fff6,transparent),radial-gradient(1.5px 1.5px at 62% 12%,#fff7,transparent);animation:tw 6s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.35}to{opacity:1}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity 1.6s ease,transform 1.6s ease}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.9s}.d2{transition-delay:1.8s}.d3{transition-delay:2.7s}.d4{transition-delay:3.6s}
+.big{font-size:clamp(2.6rem,12vw,6rem);letter-spacing:.08em;color:var(--gold);font-weight:300}
+.mid{font-size:clamp(1.4rem,5.5vw,2.4rem)}
+.small{font-size:clamp(1rem,3.8vw,1.3rem);opacity:.7;letter-spacing:.12em}
+.hi{font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(4rem,22vw,9rem);color:var(--gold);text-shadow:0 0 40px #e8d3a255}
+/* intro */
+#intro .st{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);padding:0 7vw;opacity:0;transition:opacity 1.6s ease;pointer-events:none}
+#intro .st.on{opacity:1;pointer-events:auto}
+#n21{font-size:clamp(7rem,45vw,16rem);color:var(--gold);text-shadow:0 0 60px #e8d3a2aa,0 0 120px #e8d3a255;animation:glow 3s ease-in-out infinite alternate}
+@keyframes glow{from{text-shadow:0 0 30px #e8d3a266}to{text-shadow:0 0 80px #e8d3a2cc,0 0 140px #e8d3a266}}
+#openBtn{margin-top:2.2rem;background:none;border:1px solid var(--gold);color:var(--gold);padding:.9rem 2.2rem;font:inherit;font-size:1.3rem;letter-spacing:.15em;border-radius:40px;cursor:pointer;transition:background .4s}
+#openBtn:hover{background:#e8d3a222}
+#cue{position:absolute;bottom:6svh;left:0;right:0;opacity:0;transition:opacity 2s}
+#cue.on{opacity:.8;animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(8px)}}
+/* counter */
+#cnt{font-size:clamp(4rem,22vw,9rem);color:var(--gold)}
+.years{display:flex;gap:6vw;margin-top:2.5rem;justify-content:center}
+.years div{width:22vw;max-width:110px;aspect-ratio:1;border:1px solid #e8d3a255;border-radius:50%;display:grid;place-items:center;font-size:1rem;letter-spacing:.1em}
+/* letter */
+.paper{max-width:560px;width:100%;background:linear-gradient(160deg,#1a1712,#110f0b);border:1px solid #e8d3a233;border-radius:6px;padding:9vw 7vw;box-shadow:0 20px 80px #000a;text-align:left}
+.paper p{font-size:clamp(1.15rem,4.4vw,1.45rem);margin:1.4rem 0;font-style:italic}
+/* wishes */
+.stars{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(.6rem,3vw,1.4rem);max-width:460px;margin-top:2rem}
+.star{aspect-ratio:1;border-radius:50%;border:1px solid #e8d3a255;background:radial-gradient(circle,#e8d3a233,transparent 70%);color:var(--gold);font:inherit;font-size:1.1rem;cursor:pointer;animation:tw 3s ease-in-out infinite alternate;transition:transform .3s}
+.star:nth-child(3n){animation-delay:1s}.star:nth-child(3n+1){animation-delay:2s}
+.star.seen{background:radial-gradient(circle,#e8d3a2aa,#e8d3a222 70%);color:#000;animation:none}
+.star:active{transform:scale(.9)}
+#wishBox{position:fixed;inset:0;background:#000d;display:none;place-items:center;z-index:30;padding:8vw}
+#wishBox.on{display:grid}
+#wishBox div{max-width:420px;text-align:center;font-size:clamp(1.4rem,6vw,2rem);animation:fi .9s ease}
+#wishBox small{display:block;margin-top:2rem;opacity:.5;font-size:1rem;letter-spacing:.1em}
+@keyframes fi{from{opacity:0;transform:scale(.96)}}
+#count{opacity:.6;margin-top:1.4rem;letter-spacing:.15em}
+/* yugas */
+.yuga{min-height:70svh}
+/* present */
+#present{background:linear-gradient(#05050a,var(--ivory) 30%,#fdecd2);color:#4a3a28;transition:none}
+#present .big{color:#b0793a}
+.fl{position:absolute;font-size:2rem;opacity:.7;animation:fl 9s ease-in-out infinite alternate;pointer-events:none}
+@keyframes fl{to{transform:translate(18px,-26px) rotate(25deg)}}
+/* final */
+#final .big{margin-top:1rem}
+#egg{margin-top:3rem;opacity:0;transition:opacity 2.5s;font-size:1.2rem}
+#egg.on{opacity:.75}
+/* ui */
+#music{position:fixed;right:max(14px,env(safe-area-inset-right,0px));top:calc(14px + env(safe-area-inset-top,0px));z-index:20;width:38px;height:38px;border-radius:50%;border:1px solid #e8d3a244;background:#0008;color:var(--gold);font-size:1rem;opacity:0;pointer-events:none;transition:opacity 1.5s,text-decoration 0s;cursor:pointer}
+#music.on{opacity:.55;pointer-events:auto}
+#music.off{opacity:.3;text-decoration:line-through}
+#prog{position:fixed;left:0;right:0;bottom:calc(10px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;gap:0;z-index:15;opacity:0;transition:opacity 2s;pointer-events:none}
+#prog.on{opacity:1}
+#prog i{width:9px;height:9px;border:1px solid #e8d3a2aa;border-radius:50%;margin:0 10px;position:relative;transition:background .6s}
+#prog i:not(:last-child)::after{content:"";position:absolute;left:100%;top:50%;width:20px;border-top:1px solid #e8d3a255}
+#prog i.a{background:#e8d3a2}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important;scroll-behavior:auto!important}.rv{transition-delay:0s!important}}
+
+body::before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opacity:0;transition:opacity 2.5s;background:radial-gradient(ellipse at center,rgba(70,40,80,.16) 0,transparent 45%,rgba(0,0,0,.5) 100%)}body.lofi::before{opacity:1}body.lofi::after{opacity:.13}body:not(.lofi) .ff{display:none}body.lofi #tag{opacity:.6}
+body::after{content:"";position:fixed;inset:0;z-index:41;pointer-events:none;opacity:0;transition:opacity 2.5s;mix-blend-mode:overlay;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/></filter><rect width='160' height='160' filter='url(%23n)'/></svg>");animation:gr 1s steps(4) infinite}
+@keyframes gr{25%{background-position:30px 10px}50%{background-position:-20px 40px}75%{background-position:10px -30px}}
+.ff{position:fixed;width:4px;height:4px;border-radius:50%;background:#ffd9a8;box-shadow:0 0 12px 3px #ffb86c88;pointer-events:none;z-index:2;opacity:0;animation:ff linear infinite}
+@keyframes ff{0%{opacity:0;transform:translate(0,0)}20%,80%{opacity:.8}100%{opacity:0;transform:translate(40px,-110px)}}
+#tag{position:fixed;left:14px;top:calc(18px + env(safe-area-inset-top,0px));font-size:.95rem;letter-spacing:.12em;opacity:0;z-index:20;transition:opacity 2s;color:#e8d3a2aa}
+#tag.on{opacity:.6}
+</style></head>
+<body class="lock">
+<audio id="bgMusic" loop preload="none"><source src="/Teri Ho Na Saki.mp3" type="audio/mpeg"></audio>
+<button id="music" aria-label="Toggle music">🎵</button>
+<div id="tag">♪ teri ho na saki · for khushi</div>
+<div id="prog"><i></i><i></i><i></i><i></i><i></i></div>
+
+<!-- Ch 0/1: secret link + cinematic intro -->
+<section id="intro"><div class="bg"></div>
+ <div class="st on" id="s0"><p class="mid" id="l1" style="opacity:0;transition:opacity 1.8s">Someone left something here for you...</p>
+  <p class="mid" id="l2" style="opacity:0;transition:opacity 1.8s;margin-top:1.2rem">Before you leave...</p>
+  <p class="mid" id="l3" style="opacity:0;transition:opacity 1.8s;margin-top:1.2rem">just stay for a little while.</p>
+  <button id="openBtn" style="opacity:0">Open it →</button></div>
+ <div class="st" id="s1"><h1 class="big">KHUSHI</h1></div>
+ <div class="st" id="s2"><p class="small">13.10.2005 → 13.10.2026...</p></div>
+ <div class="st" id="s3"><div id="n21" class="big">21</div></div>
+ <div class="st" id="s4"><p class="mid">21... kitni bdi ho gyii yrrr tuu..</p></div>
+ <div class="st" id="s5"><h2 class="mid" style="color:var(--gold)">Happiestt Birthday, Khushi.. 🤍</h2></div>
+ <div class="st" id="s6"><p class="mid">Now take your time</p></div>
+ <p id="cue" class="small">scroll ↓</p>
+</section>
+
+<!-- Ch 2 -->
+<section data-p="0"><div class="bg"></div>
+ <div class="hi rv">ख़ुशी</div>
+ <p class="mid rv d1" style="margin-top:2rem">Kuch naam sirf naam ni hote..</p>
+ <p class="mid rv d2" style="margin-top:1rem">vo aapke andr iss kadrr bse hote h.. <br> ki chaah krr bhii uss naam ko zindgi se nhi bhulaya ja skta...</p>
+ <h2 class="big rv d3" style="margin-top:2rem">Khushi...</h2>
+</section>
+<section data-p="0"><div class="bg"></div>
+ <p class="mid rv">Or shyd isiliye...</p>
+ <p class="mid rv d1" style="margin-top:1rem">even after itne saalo baad bhi</p>
+ <p class="mid rv d2" style="margin-top:1rem;color:var(--gold)">your name still sounds exactly like what it means</p>
+</section>
+
+<!-- Ch 3 -->
+<section data-p="1"><div class="bg"></div>
+ <p class="small rv">CHAPTER III</p>
+ <p class="mid rv d1" style="margin-top:1.5rem">pta h kuch logo ko zidagi me kismat milati h..</p>
+ <p class="mid rv d2" style="margin-top:1rem">orr zindagi harr kisi ko dusra moka nii deti</p>
+ <p class="mid rv d3" style="margin-top:1rem">kuch bonds bnane hmare hath me hote h.. <br> jse dosti ka..</p>
+ <p class="mid rv d4" style="margin-top:1rem">koi hmari zindagi me aa kar itna khaas ho skta h sapne me bhi ni sochaa tha</p>
+ <p class="mid rv d5" style="margin-top:1rem">some people just quietly become<br>a part of your days</p>
+ <p class="mid rv d6" style="margin-top:1rem">a part of your life</p>
+ <p class="mid rv d7" style="margin-top:1rem">or a whole life</p>
+ <p class="mid rv d8" style="margin-top:1rem">whole life.....</p>
+ <p class="mid rv d9" style="margin-top:1rem">kitna chota word h na... <br> pr issi me puri zindagi smaati h</p>
+ <p class="mid rv d10" style="margin-top:1rem">wishing a veryy beautiful birthday to the person i always wish to smile.. <br> i always admire <br>and i'll always love </p>
+ <p class="mid rv d11" style="margin-top:1rem;color:var(--gold)">And then you can't imagine your life without them</p>
+</section>
+
+<!-- Ch 4 -->
+<section data-p="1"><div class="bg"></div>
+ <p class="small rv">THREE YEARS</p>
+ <div id="cnt" class="rv d1">0</div>
+ <p class="mid rv d2">days.</p>
+ <div class="years rv d3"><div>Year 1</div><div>Year 2</div><div>Year 3</div></div>
+ <p class="small rv d4" style="margin-top:2.5rem">Not a small number. Not a small story.</p>
+</section>
+
+<section data-p="1"><div class="bg"></div>
+ <p class="small rv">THE FIRST TIME</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">I don't remember the exact day I first noticed you.</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">That's the strange part.</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">Some of the biggest things in life don't arrive with an announcement.</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">They just slowly become impossible to ignore.</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s;color:var(--gold)">One day you were a stranger... and then you were someone whose messages I waited for.</p>
+</section>
+
+<section data-p="1"><div class="bg"></div>
+ <p class="small rv">SMALL THINGS</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">tko yaad h tune ek bar kaha tha..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">ki baat krna bnd kr skti hu</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">bhul nhi skti...</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">and mne kha tha ki dikha denge ye bhi</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s;color:var(--gold)">and ab scchai se na tu mukar skti or na hi m..</p>
+</section>
+
+<section data-p="2"><div class="bg"></div>
+ <p class="small rv">LATE NIGHTS</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">unn late night conversations me kahi</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">kho sa gya h mera dil</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">the world got smaller and kinder..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">No one else existed.. No one needed to...</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s;color:var(--gold)">vo feeling m chah kr bhi kahi or nhi dhund skta..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s;color:var(--gold)">you were my sukoon yrr.. </p>
+</section>
+
+<section data-p="2"><div class="bg"></div>
+ <p class="small rv">WHAT YOU TAUGHT ME</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">tune mko patience sikhaya</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">tune muje khul krr hasna sikhaya</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">mne tujse seekha ki khud ki khushi ko sacrifice krke kisi or ko comfort and khushi dene se khud ko kitna sukoon milta h</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s;color:var(--gold)">mne tko kbbbhii nii kaha ye.. <br> I never thanked you for any of it.. So I'm doing it here.</p>
+</section>
+
+<section data-p="2"><div class="bg"></div>
+ <p class="small rv">THE THINGS I STILL DO</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">kbhi kbhi kch gaane ese aa jate h.. ki wakt tham sa jata h <br>teri yaade.. <br>dil me pyaar.. <br>gaalo prr aansu.. <br>hontho pr hlki si muskaan.. <br>orr aankho me tu... </p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">kbhi kch esa dikh jata h or khyaal aata h.. <br>ki tko kitnaa psnd tha na ye... </i></p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">kbhi kbhi m randomly tera naam likhh deta hu..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">kbhi copy me.. kbhi keyboard pe.. kbhi table pr...</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">orr fir yaad aata h ki kuch log dil me reh jate h.. </p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s;color:var(--gold)">mgr zindgi me nhi...</p>
+</section>
+
+<!-- Ch 5 -->
+<section data-p="2"><div class="bg"></div>
+ <p class="small rv" style="margin-bottom:2rem">THE UNSENT LETTER</p>
+ <div class="paper">
+  <p class="rv">Khushi...</p>
+  <p class="rv">mne ye sb ye soch kr likha tha ki tu kbhi ye sb ni pdhegi.. or shyd yhi sch h ki Some things are said best when they ask for nothing back</p>
+  <p class="rv"> Dk kyu prr yaad aa rhi h teri bhtt.. andr se bhott low bhott tuta hua feel ho rha h.. kisi se kuchh bol ni skta kisi se bhi share ni kr skta what I’m feeling inside.. bss apne andr hi rkh skta hu.. tujhse bat krne ka bhttt mn kr rha h yrr.. kaash esa ho skta ki sbb kchhh bhul krr 2 min k liye shi tu vo old khushii bn krr baat kr ske… bina koi rishta hote huye bhi yrr move on ni kr pa rha kyuuuu yrrrr… why u always strikes in the mid night yrrr…????kyaaa h tujhmeee esaaa…..???????? Bahr chhatri pr ghumne jata hu akela betha rehta huu kyuuu tu muje mere side me bethiii feel hoti h kyuuu tu chaand me dikhaii detiii h.. m chaand se baate krta hu tbb kyuu tere repliess muje uss chaand me se aate feel hote h kyuuuu yrrrrrrrrr…???????? Kaahaaaa jaauuu m kisse baat kruuu kisse abb apnaa sbbb kchhh achaa buraaa kisseee sharee kruuu yrrr… i lost my sb kchh yrr mera besttestttt frndd mera yaar muje chainn se do ghadi wakt nikal krr sunne vala mujse ghnto bina preshan huye baate krne valaa..!!! Ye sb bhi m abhii isliye likh rha hu bss kyukii ik tere pass send hone vala nhii h.. Im just trying to express myy feelingsss taki thoda light feel hote skee.. missing vo apne oldd dayss yrr scchii… <br> I hope ki life ab tere hisab se chl rhi ho... I hope jo jo tune chaha ho vo sb tko mila ho or aage bhi milta rhe.. I hope teri zindgi se smiles kbhi na jaaye... or tu jinke bhi sath h life me.. unki life se "khushi" kbhi na jaaye...orr logo ko pta chle ki how rare you are.. i hope tu bhottt bdii insaan bne.. tujme jo insaaniyat h vo kbhii bhi na jaaye..</p>
+  <p class="rv">Thank uuu for the good days.. They were real, and they stillll matter to me..</p>
+  <p class="rv">Whatever this year brings, I hope it brings you peace first, and everything else after..</p>
+  <p class="rv" style="text-align:right">— someone who still wishes you well</p>
+ </div>
+</section>
+
+<section data-p="3"><div class="bg"></div>
+ <p class="small rv">I'M SORRY</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">If I ever hurt u, I'm sorry..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">If I ever said too little.. or too much.. or at the wrong time.. I'm sorry....</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">mne kbhi tujh prr bojh nii banna chaha</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">I only ever wanted to be a soft place in your world..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s;color:var(--gold)">If I wasn't, I hope time makes it gentler..</p>
+</section>
+
+<!-- Ch 6 -->
+<section data-p="3"><div class="bg"></div>
+ <p class="small rv">21 LITTLE WISHES</p>
+ <p class="mid rv d1" style="margin-top:1rem">Tap a star. Take your time.</p>
+ <div class="stars rv d2" id="stars"></div>
+ <p id="count">0 / 21 opened</p>
+</section>
+<div id="wishBox"><div><span id="wishTxt"></span><small>tap anywhere to close</small></div></div>
+
+<section data-p="3"><div class="bg"></div>
+ <p class="small rv">FOR THE YOUNGER YOU</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">If I could talk to the girl you were at 17,</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">I'd tell her: it's going to hurt sometimes, and you'll still be okay..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">tu khud pr doubt bhi kregi.. prr tu har baar glt nii hogi..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">You'll become someone who makes people feel safe without even trying..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s;color:var(--gold)">And at 21, you are already so much more than you thought you'd be..</p>
+</section>
+
+<!-- Ch 7 -->
+<section class="yuga" data-p="3"><div class="bg"></div>
+ <p class="small rv">THE FOUR YUGAS</p>
+ <p class="mid rv d1" style="margin-top:2rem">pta h log khte h ki har 4 yug ke bad ye same time vapas repeat hota h..</p>
+ <p class="mid rv d2" style="margin-top:1rem;opacity:.8">idk ye sch h ya nii</p>
+</section>
+<section class="yuga" data-p="3"><div class="bg"></div>
+ <p class="mid rv">prr agr ye schh h naa..</p>
+ <p class="mid rv d1" style="margin-top:1rem">to m puri zindgi to kya.. ya ye 7 janam to kya.. pure 4 yug bhi intezaar krne ko tyaar hu..</p>
+ <p class="mid rv d2" style="margin-top:1rem">sirf tere sath voi pal vapas se bitaane k liyee.... </p>
+</section>
+<section class="yuga" data-p="3"><div class="bg"></div>
+ <p class="mid rv d2" style="margin-top:1rem;color:var(--gold)">I reallyy miss uu khushii...</p>
+</section>
+
+<section data-p="4"><div class="bg"></div>
+ <p class="small rv">WHAT I HOPE FOR YOU</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">I hope tere pas ek esa dost ho jo tere din bhar ki saari baate sune..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">I hope koi teri baato se teko judge na kre</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">I hope you never regretted the choices you've made..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">I hope you get everything you've ever quietly wished for..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s;color:var(--gold)">And on the days it feels heavy.. I hope you remember that someone once thought the world of you...</p>
+</section>
+
+<section data-p="4"><div class="bg"></div>
+ <p class="small rv">A SMALL PAUSE</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s">muje pta h nhi honge pr fir bhi abhi teri aankho me aansu h to koii baat nii</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.7s">thodi sii smilee krr..</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:1.4s">or let them come.. fir unhe saaf krke bss haste rehna</p>
+ <p class="mid rv" style="margin-top:1.4rem;transition-delay:0.0s;color:var(--gold)">zindgi sbko moka nii deti.. itne khubsurat dost bnane ka</p>
+</section>
+
+<!-- Ch 8 -->
+<section id="present" data-p="4">
+ <span class="fl" style="left:8%;top:30%">🌸</span><span class="fl" style="right:10%;top:45%;animation-delay:2s">🌼</span><span class="fl" style="left:20%;bottom:15%;animation-delay:4s">🌷</span><span class="fl" style="right:22%;bottom:25%;animation-delay:1s">🌸</span>
+ <p class="mid rv" style="margin-top:18svh">prrr chdd kl ki baate..</p>
+ <p class="mid rv d1" style="margin-top:1rem">Today is yours</p>
+ <p class="mid rv d2" style="margin-top:1rem">You're 21..</p>
+ <p class="mid rv d3" style="margin-top:1rem">aage puri zindgii baahein khol krr tera intezaar krr rhi h..</p>
+ <p class="mid rv" style="margin-top:4rem">Go and make it beautiful..</p>
+ <p class="mid rv" style="margin-top:4rem">the way u maked mine.. by just existing in it..</p>
+ <h2 class="big rv d1" style="margin-top:2rem;font-size:clamp(2rem,9vw,4rem)">HAPPY 21st BIRTHDAY, KHUSHI.. 🤍</h2>
+</section>
+
+<!-- Final -->
+<section id="final" data-p="4"><div class="bg"></div>
+ <p class="mid rv">You don't need to reply.</p>
+ <p class="mid rv d1" style="margin-top:.8rem">tuje koii zrurt nii h iska reply krne ki..</p>
+ <p class="mid rv d1" style="margin-top:.8rem">and really sorryy tune last year diwali pr mna kiya tha koi bhi msg krne se..</p>
+ <p class="mid rv d1" style="margin-top:.8rem">but it's your birthdayy naa.... <br>m kse khud ko rok pata.. </p>
+ <p class="mid rv d2" style="margin-top:.8rem">nd tko iss website k liye kch bhi reply ni dena h</p>
+ <p class="mid rv" style="margin-top:3rem">It was simply made because...</p>
+ <p class="mid rv d1" style="margin-top:.8rem;color:var(--gold)">once upon a time, you mattered immensely to someone.</p>
+ <p class="mid rv d2" style="margin-top:2rem">And somewhere, even now...</p>
+ <p class="mid rv d3" style="margin-top:.8rem">someone still hopes you're doing okay..</p>
+ <p class="mid rv d3" style="margin-top:.8rem">or aasmaan me chaand ko dekh yhi sochta hu ki tu bhi shyd same time usi ko dekh rhii hogii.. </p>
+ <p class="mid rv d3" style="margin-top:.8rem">yrr dil mera naazuk h dil ki nazakat pehchan jaao naa.. <br>chahta h tumhe tum ye jaan jaao naa...<br>aakhir gltiya to khuda bhi maaf krr hi deta h..<br>yrr tum naraaz ho mujse pls maan jao naa... <br>kis muh se btau tujse ye dil ko tujse baat krni orr <br>dil mere oas do thodi h... <br>or aasman me kya dekhti h sheesha dekh.. <br> chaand tu h vo thodi h... </p>
+
+  <p class="mid rv d3" style="margin-top:.8rem">ye meri aankhe bhi meri ab hoti nhi h.. <br>aansu lekar bhi kyu ye roti nhi h.. <br>gndi aadat lg chuki h jaana inko.. <br>tumse baat na ho to ye soti nhi h.. </p>
+
+  <p class="mid rv d3" style="margin-top:.8rem">kya chaand bhi sitaaro ko bhula ska kbhi..? <br>kya ranjhna bhi heer ko bula ska kbhi? <br>ek hasi ke badle chaahe jaan hi lelo.. <br>kya fool bhi ye titliyaan rula ska kbhi..! </p>
+
+  <p class="mid rv d3" style="margin-top:.8rem">naa maayine aasma ke tere saamne muje.. <br>tere vaaste apni saari kalmein luta du.. <br>tu kahe agar ki chaand safed hi psnd h tuje.. <br>vo chaand ke bhi daago ko yun pal me chhuta du..</p>
+
+  <p class="mid rv d3" style="margin-top:.8rem">phool khilte na ab yaado ke makaan me.. <br>jis makan me ab saanso ki awaaz hi na ho.. <br> tum milna mujhse aake uss jahaan me.. <br> jis jahaan me bichadne ka riwaz hi na ho...</p>
+
+  <p class="mid rv d3" style="margin-top:.8rem">yun to chaand ko bhi na mila sitara h koi.. <br>aaju baju dekha na hmara h koi.. <br>samandar si aankho me hua m laapata.. <br>na raahi h na kashti na kinaara h koi..</p>
+
+ <p class="mid rv d3" style="margin-top:.8rem">mujko muskura kr sone ka hisaab na mila <br>mujhko tera fir kbhi koi khwaab na mila... <br>ghar se nikla dhundne ko jb zmaane me kbhi..... <br>prr tujhsa jo h khilta.. vo gulaab na mila.. </p>
+
+ <p class="mid rv d3" style="margin-top:.8rem">kch yaad aaya??</p>
+ <h2 class="big rv" style="margin-top:4rem">Stay happy, Khushi...</h2>
+ <p class="mid rv d1" style="color:var(--gold)">Always..</p>
+ <p id="egg">Okay. Now go enjoy your birthday.. 🤍</p>
+</section>
+
+<script>
+const $=id=>document.getElementById(id),sleep=ms=>new Promise(r=>setTimeout(r,ms));
+const music=$('bgMusic'),mBtn=$('music'),RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+// opening text
+(async()=>{await sleep(1200);$('l1').style.opacity=1;await sleep(2600);$('l2').style.opacity=1;await sleep(2200);$('l3').style.opacity=1;await sleep(2000);$('openBtn').style.opacity=1})();
+function show(id){document.querySelectorAll('#intro .st').forEach(e=>e.classList.toggle('on',e.id===id))}
+$('openBtn').addEventListener('click',async()=>{
+  music.volume=.55;music.play().catch(()=>{});
+  mBtn.classList.add('on');
+  show('');await sleep(1800);
+  show('s1');await sleep(3000);
+  show('s2');await sleep(2800);
+  show('s3');await sleep(3600);
+  show('s4');await sleep(3000);
+  show('s5');await sleep(3400);
+  show('s6');await sleep(2200);
+  $('cue').classList.add('on');$('prog').classList.add('on');
+  document.body.classList.remove('lock');unlocked=true; // scroll is hers from here
+});
+mBtn.addEventListener('click',()=>{if(music.paused){music.play().catch(()=>{});mBtn.classList.remove('off')}else{music.pause();mBtn.classList.add('off')}});
+// scroll reveals
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.35});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+// counter
+let counted=false;
+new IntersectionObserver((es,o)=>{if(es[0].isIntersecting&&!counted){counted=true;const t0=performance.now(),el=$('cnt'),D=RM?1:2600;
+ (function f(t){const k=Math.min((t-t0)/D,1);el.textContent=Math.round(1095*(1-Math.pow(1-k,3)))+(k===1?'+':'');if(k<1)requestAnimationFrame(f)})(t0)}},{threshold:.5}).observe($('cnt'));
+// wishes
+const W=["May your mornings feel light.","May you laugh until your stomach hurts.","May you always be chosen, never just kept.","May your dreams get braver every year.","May you never doubt how rare you are.","May the right people stay.","May rest come easily.","May your hard days be short.","May you travel somewhere that takes your breath away.","May you forgive yourself faster.","May good news find you often.","May you hear 'I'm proud of you' a lot.","May you eat your favourite thing today.","May your heart stay soft, and safe.","May you outgrow what hurt you.","May love find you gently.","May you trust your own voice.","May your name always sound like joy.","May luck quietly work in your favour.","May you feel enough, always.","May this be your best year yet."];
+const seen=new Set(),S=$('stars'),box=$('wishBox');
+W.forEach((w,i)=>{const b=document.createElement('button');b.className='star';b.textContent=i+1;b.setAttribute('aria-label','Wish '+(i+1));
+ b.onclick=()=>{$('wishTxt').textContent=w;box.classList.add('on');b.classList.add('seen');seen.add(i);$('count').textContent=seen.size+' / 21 opened'};S.appendChild(b)});
+box.onclick=()=>box.classList.remove('on');
+// progress (reflects scroll only)
+const dots=[...document.querySelectorAll('#prog i')],secs=[...document.querySelectorAll('[data-p]')];
+function prog(){let cur=0;const mid=innerHeight/2;secs.forEach(s=>{const r=s.getBoundingClientRect();if(r.top<mid)cur=+s.dataset.p});
+ dots.forEach((d,i)=>d.classList.toggle('a',i<=cur))}
+addEventListener('scroll',prog,{passive:true});prog();
+// easter egg: 8s after final screen is reached
+let eggT;new IntersectionObserver(es=>{if(es[0].isIntersecting){eggT=eggT||setTimeout(()=>$('egg').classList.add('on'),8000)}},{threshold:.6}).observe($('final'));
+
+(()=>{const n=RM?0:14;for(let i=0;i<n;i++){const d=document.createElement('i');d.className='ff';d.style.left=Math.random()*100+'vw';d.style.top=(30+Math.random()*70)+'vh';d.style.animationDuration=(7+Math.random()*8)+'s';d.style.animationDelay=(-Math.random()*10)+'s';document.body.appendChild(d)}})();
+let unlocked=false;const introEl=$('intro');
+function lofi(){document.body.classList.toggle('lofi',unlocked&&introEl.getBoundingClientRect().bottom<innerHeight*.6)}
+addEventListener('scroll',lofi,{passive:true});
+</script>
+</body></html>
